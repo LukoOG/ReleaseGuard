@@ -1,0 +1,27 @@
+{
+  "name": "@releaseguard/engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ReleaseGuard analysis engine — change analysis, evidence collection, CRA evaluation",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@releaseguard/contracts": "workspace:*",
+    "@releaseguard/cra-rules": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

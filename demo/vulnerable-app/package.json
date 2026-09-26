@@ -1,0 +1,13 @@
+{
+  "name": "vulnerable-app",
+  "version": "1.0.0",
+  "description": "Demo application used to exercise the ReleaseGuard engine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  }
+}
